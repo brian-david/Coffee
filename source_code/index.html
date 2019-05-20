@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Coffee - Home Page</title>
+		<meta name="viewport" content="width = device-width, initial-scale = 1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Damion|Sorts+Mill+Goudy" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+	</head>
+	
+	<body>
+		
+		<!--NAVIGATION ====================================================================================================-->
+		
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand">Caffeine</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- CAROUSEL =====================================================================================================-->
+		
+		<header id="myCarousel" class="carousel slide">
+
+			<!-- slide indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+
+			<!-- slide wrapper -->
+			<div class="carousel-inner">
+				<div class="item active">
+					<!-- THe first image is set as a background image with inline css -->
+					<div class="fill" style="background-image:url('images/img3.jpg');"></div>
+				</div>
+				<div class="item">
+					<!-- second image -->
+					<div class="fill" style="background-image: url('images/img2.jpeg');"></div>
+				</div>
+				<div class="item">
+					<!-- third image -->
+					<div class="fill" style="background-image: url('images/img1.jpeg');"></div>
+				</div>
+			</div>
+
+			<!-- THE TEXT OVERLAPPING THE CAROSOUL -->
+			<div class="main-text hidden-xs vertical-center">
+				<div id="homePage" class="container text-center col-md-6">
+					<div id="text">
+						<h1>Welcome to Caffeine</h1>
+						<h3>It's a coffee shop!</h3>
+						<br>
+						<a href="order/view.html" class="btn btn-primary">Order</a>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<!-- SCRIPT INCLUSIONS =======================================================================================-->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<script src="classes/Coffee.js"></script>
+    	<script src="index.js"></script>
+	</body>
+</html>

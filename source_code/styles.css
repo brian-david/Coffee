@@ -1,0 +1,125 @@
+.navbar-brand{
+   font-family: 'Lobster Two', cursive;
+   font-size: 18pt;
+}
+
+html, body {
+   height: 100%;
+   font-family: 'Amaranth', sans-serif;
+   background: linear-gradient(#232526, #414345);
+   background-position: fixed;
+}
+
+/* You can change the height of the carousel by changing the height in the class below. It is set to 50% by default, but can be any height! */
+
+.carousel {
+height: 100%;
+}
+
+.item, .active, .carousel-inner {
+   height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+   width: 100%;
+   height: 100%;
+   background-position: center;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+}
+
+footer {
+   margin: 50px 0;
+}
+
+.main-text{
+   position: absolute;
+   top: 50px;
+   width: 100%;
+   color: #FFF;
+   margin-top: 15px;
+}
+
+.btn-min-block{
+   min-width: 170px;
+   line-height: 26px;
+}
+
+.btn-clear{
+   color: #FFF;
+   background-color: transparent;
+   border-color: #FFF;
+}
+
+.btn-clear:hover{
+   color: #000;
+   background-color: #FFF;
+}
+
+.vertical-center{
+   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+   min-height: 100vh; /* These two lines are counted as one :-)       */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#homePage{
+   background-color: rgba(142,80,46,0.8);
+   border-radius: 15px;
+   padding: 50px;
+   margin-top: -150px;
+}
+
+h1{
+   font-family: 'Damion', cursive;
+}
+
+.body{
+   margin-top: 52px;
+}
+
+#middle{
+   display: flex;
+   justify-content: center;
+}
+
+.column{
+   border-style: solid;
+   border-width: 2px;
+   border-radius: 5px;
+}
+
+.roundBox{
+   padding-bottom: 20px;
+   border-radius: 5px;
+   background-color: #c9bea2;
+}
+
+label.pic > input{
+   visibility: hidden;
+   position: absolute;
+}
+
+label.pic > input + img{
+   cursor: pointer;
+   border:2px solid transparent;
+}
+
+label.pic > input:checked + img{
+   border-radius: 5px;
+   background-color: #5E4423;
+   colour: #f0f0f5;
+}
+
+.icon{
+   height: 200px;
+}
+
+.navbar-inverse .navbar-brand{
+   color: #C19D67;
+}

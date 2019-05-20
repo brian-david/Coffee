@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Coffee - Order Page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+		<link rel="stylesheet" href="../styles.css">
+	</head>
+
+	<body>
+		<!--NAVIGATION ====================================================================================================-->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="../index.html">Caffeine</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- FORM ========================================================================================================-->
+
+		<div class="container body">
+			<div class="row">
+				
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-12 roundBox">
+							<div> <!-- ORDER - Actual content -->
+								
+								<h4>Place your Order</h4>
+								<form id="order">			
+									<!-- SIZE -->
+									<div class="form-group"> 
+										<fieldset class="roundBox">
+											<h3 class="text-center">Size</h3> 
+											<div class="text-center">	
+												<label class="radio-inline pic">
+													<input id="short" type="radio" name="size" value="0"/>
+													<img class="icon" src="../images/short-01.png">
+												</label>
+												<label class="radio-inline pic">
+													<input id="tall" type="radio" name="size" value="1">
+													<img class="icon" src="../images/tall-01.png">
+												</label>
+												<label class="radio-inline pic">
+													<input id="grande" type="radio" name="size" value="2">
+													<img class="icon" src="../images/grande-01.png">
+												</label>
+											</div>
+										</fieldset>
+									</div> <!-- END OF SIZE -->
+
+									<!--STYLE-->
+									<div class="form-group"> 
+										<fieldset class="roundBox">
+											<h3 class="text-center">Styles</h3>
+											<div class="text-center">
+												<label class="radio-inline">
+													<input type="radio" name="style" value="0">Americano
+												</label>
+												<label class="radio-inline">
+													<input type="radio" name="style" value="1">Cappuccino
+												</label>
+												<label class="radio-inline">
+													<input type="radio" name="style" value="2">Latte
+												</label>
+											</div>
+										</fieldset>
+									</div> <!--END OF STYLE -->
+
+									<!--EXRAS -->
+									
+									<div class="form-group mb-12">
+										<div class="form-inline">
+											
+											<div class="form-group mb-3" id="espressoShots">
+												<label for="espressoShots">Extra Espresso Shots</label>
+												<select class="form-control" id="extraEspresso">
+													<option value="0">none</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+												</select>
+											</div>
+											
+											<div class="form-group mb-3">
+												<label for="sugar">Sugar</label>
+												<select class="form-control" id="sugarSelect">
+													<option value="0">none</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+												</select>	
+											</div>
+
+										</div>
+									</div>
+
+									<!-- SUGAR -->
+									<div class="form-inline">
+										
+									</div>
+
+									<!-- EXTRA CREAM -->
+									<div class="form-inline">
+										<div class="form-group mb-3">
+											<label for="cream">Extra Cream</label>
+											<select class="form-control" id="creamSelect">
+												<option value="0">no</option>
+												<option value="1">yes</option>
+											</select>
+										</div>
+									</div>
+
+									<!-- EXTRA MIK -->
+									<div class="form-inline">
+										<div class="form-group mb-3">
+											<label for="milk">Extra Milk</label>
+											<select class="form-control" id="milkSelect">
+												<option value="0">no</option>
+												<option value="1">yes</option>
+											</select>										
+										</div>
+									</div>
+
+									<!-- SYRUP -->
+									<div class="form-inline">
+										<div class="form-group mb-3">
+											<label for="syrup">Syrup</label>
+											<select class="form-control" id="syrupSelect">
+												<option value="0">none</option>
+												<option value="1">Caramel</option>
+												<option value="2">Hazelnut</option>
+											</select>										
+										</div>
+									</div>
+
+									<div class="text-center">
+										<button id="submit" name="submit" type="button" class="btn btn-primary">Add to Order</button>
+									</div>	
+
+								</form>
+
+							</div> <!-- ORDER - Actual content -->
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-md-4 container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="roundBox" id="orderReview"> <!--REVIEW - Actual content -->
+								<h4>Order Review</h4>
+								<!-- div where the order is displayed -->
+								<div id="userOrderDiv"></div>
+						</div> <!-- REVIEW - end of content -->
+					</div>
+				</div> 
+
+			</div> <!-- End of MAIN row -->
+		</div> <!-- End of MAIN container -->
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../classes/Subcomponents.js"></script>
+		<script src="../classes/Coffee.js"></script>
+    	<script src="../classes/Order.js"></script>
+    	<script src="model.js"></script>
+		<script src="controller.js"></script>
+	</body>
+</html>
